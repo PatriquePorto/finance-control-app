@@ -153,7 +153,7 @@ const DOM = {
 }
 
 const inputNumber = document.querySelector("#amount")
-inputNumber.addEventListener("touchstart", (e) => {
+inputNumber.addEventListener("keypress", (e) => {
  
     if(!checkChar(e)) {
         e.preventDefault()
