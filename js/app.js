@@ -153,7 +153,7 @@ const DOM = {
 }
 
 const inputNumber = document.querySelector("#amount")
-inputNumber.addEventListener("keypress, touchstart", (e) => {
+inputNumber.addEventListener("touchstart", (e) => {
  
     if(!checkChar(e)) {
         e.preventDefault()
@@ -168,6 +168,24 @@ function checkChar(e) {
         return true
     }
 }
+
+const touchNumber = document.querySelector("#amount")
+touchNumber.addEventListener("ontouchstart", (e) => {
+ 
+    if(!checkChar(e)) {
+        e.preventDefault()
+    } 
+})  
+
+function checkChar(e) {
+    const char = String.fromCharCode(e.keyCode)
+    const pattern = '[0-9 + -]'
+
+    if(char.match(pattern)) {
+        return true
+    }
+}
+
 
 const as = [DOM.transactionsContainer.children]
 
