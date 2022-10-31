@@ -1,6 +1,8 @@
 # finance-control-app
 
-#Aplicativo de controle financeiro, com iserção e delete de finançãs.
+#Aplicativo de controle financeiro, com iserção e delete dos dados adicionados.
+
+#Busca dinâmica de algum dado inserido.
 
 #Aplicativo feito com as seguintes tecnologias: HTML5, CSS3 e Javascript!
 
