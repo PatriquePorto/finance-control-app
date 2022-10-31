@@ -152,6 +152,23 @@ const DOM = {
     
 }
 
+const inputNumber = document.querySelector("#amount")
+inputNumber.addEventListener("keypress", (e) => {
+ 
+    if(!checkChar(e)) {
+        e.preventDefault()
+    }
+})  
+
+function checkChar(e) {
+    const char = String.fromCharCode(e.keyCode)
+    const pattern = '[0-9 + -]'
+
+    if(char.match(pattern)) {
+        return true
+    }
+}
+
 const as = [DOM.transactionsContainer.children]
 
 
